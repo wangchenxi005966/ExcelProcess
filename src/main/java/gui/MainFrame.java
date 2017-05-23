@@ -134,7 +134,8 @@ public class MainFrame extends JFrame {
                     String climateFileName = climateFile.getName();
                     if (climateFileName.contains(prefix)) {
                         this.generateResultFile(prefix);
-                        long cost = this.execute(traceFile.getAbsolutePath(), climateFile.getAbsolutePath(), climateFileName, traceFileName);
+                        long cost = this.execute(traceFile.getAbsolutePath(),
+                                climateFile.getAbsolutePath(), climateFileName, traceFileName);
                         totalTime += cost;
                         this.close();
                     }
