@@ -30,7 +30,7 @@ public class Utility {
     private double[] NO3 = new double[ARRAY_SIZE];
     private double[] direction = new double[ARRAY_SIZE];
     private double[] pressure = new double[ARRAY_SIZE];
-    private double[] humity = new double[ARRAY_SIZE];
+    private double[] humidity = new double[ARRAY_SIZE];
     private double[] temperature = new double[ARRAY_SIZE];
     private double[] speed = new double[ARRAY_SIZE];
     private double[] rainfall = new double[ARRAY_SIZE];
@@ -112,7 +112,7 @@ public class Utility {
         NO3[count] = row.getCell(4).getNumericCellValue();
         direction[count] = row.getCell(5).getNumericCellValue();
         pressure[count] = row.getCell(6).getNumericCellValue();
-        humity[count] = row.getCell(7).getNumericCellValue();
+        humidity[count] = row.getCell(7).getNumericCellValue();
         temperature[count] = row.getCell(8).getNumericCellValue();
         speed[count] = row.getCell(9).getNumericCellValue();
         rainfall[count] = row.getCell(10).getNumericCellValue();
@@ -141,7 +141,7 @@ public class Utility {
         current.createCell(4).setCellValue(average(Arrays.copyOf(NO3, count)));
         current.createCell(5).setCellValue(average(Arrays.copyOf(direction, count)));
         current.createCell(6).setCellValue(average(Arrays.copyOf(pressure, count)));
-        current.createCell(7).setCellValue(average(Arrays.copyOf(humity, count)));
+        current.createCell(7).setCellValue(average(Arrays.copyOf(humidity, count)));
         current.createCell(8).setCellValue(average(Arrays.copyOf(temperature, count)));
         current.createCell(9).setCellValue(average(Arrays.copyOf(speed, count)));
         current.createCell(10).setCellValue(average(Arrays.copyOf(rainfall, count)));
