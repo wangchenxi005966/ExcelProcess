@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: xmlbeans-2.6.0.jar commons-collections4-4.1.jar curvesapi-
+ 1.04.jar log4j-1.2.17.jar poi-ooxml-schemas-3.15.jar tika-core-1.14.j
+ ar poi-ooxml-3.15.jar poi-3.15.jar stax-api-1.0.1.jar commons-codec-1
+ .10.jar
+Main-Class: main.Main
+
